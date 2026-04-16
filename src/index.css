@@ -58,6 +58,30 @@ body {
   border: 1px solid transparent;
 }
 
+.hero-text-container {
+  position: relative;
+  z-index: 10;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 2.5rem;
+  border-radius: 1.25rem;
+  color: #ffffff;
+  box-shadow: 0 24px 90px rgba(15, 23, 42, 0.22);
+  text-shadow: 0 2px 16px rgba(0, 0, 0, 0.3);
+}
+
+.hero-text-container h1 {
+  color: #ffffff;
+  text-shadow: 0 4px 28px rgba(0, 0, 0, 0.35);
+}
+
+.hero-text-container p,
+.hero-text-container .text-xs {
+  color: #e0e0e0;
+}
+
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }

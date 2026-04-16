@@ -7,6 +7,8 @@ export const buttonVariants = {
   secondary:
     'bg-[var(--color-surface-elevated)] text-[var(--color-ink)] border border-[var(--color-border)] hover:border-purple-400/50',
   ghost: 'text-[var(--color-ink)] hover:bg-[var(--color-border)]/60',
+   accent:
+    'bg-[#F4CE14] text-slate-950 shadow-lg shadow-[#F4CE14]/30 hover:shadow-[#F4CE14]/40',
 }
 
 export function Button({ children, variant = 'primary', className = '', type = 'button', ...props }) {

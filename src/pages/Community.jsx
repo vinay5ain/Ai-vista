@@ -1,12 +1,22 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
+import { Button } from '../components/ui/Button.jsx'
 import { Card } from '../components/ui/Card.jsx'
 import { SectionTitle } from '../components/ui/SectionTitle.jsx'
 import { forumCategories, forumThreads, sampleComments } from '../data/forum.js'
 
+const googleFormUrl =
+  'https://docs.google.com/forms/d/e/1FAIpQLSdb0wJJX36uhFJF9dIAxXGZMXJn4xMelBBTb4dRRUbHGK-igA/viewform?usp=dialog'
+const whatsappUrl = 'https://www.whatsapp.com/'
+
 export function Community() {
   const [liked, setLiked] = useState({})
+  const [started, setStarted] = useState(false)
   const toggleLike = (id) => setLiked((m) => ({ ...m, [id]: !m[id] }))
+  const startJoin = () => {
+    window.open(googleFormUrl, '_blank', 'noopener')
+    setStarted(true)
+  }
 
   return (
     <div className="space-y-16">
@@ -15,12 +25,53 @@ export function Community() {
           Community
         </p>
         <h1 className="mt-3 font-display text-4xl font-extrabold tracking-tight text-[var(--color-ink)] sm:text-5xl">
-          Forum <span className="gradient-text">preview</span>
+          Join the community, <span className="gradient-text">start with the form</span>
         </h1>
         <p className="mt-4 max-w-2xl text-[var(--color-ink-muted)]">
-          Categories, threads, and comments are static UI—wire them up when you add a backend.
+          Click the Join Community button to open the Google form. After starting the form, a WhatsApp link appears so you can continue joining the learning group.
         </p>
       </header>
+
+      <section className="grid gap-6 lg:grid-cols-2">
+        <Card className="p-8">
+          <p className="text-xs font-semibold uppercase tracking-[0.25em] text-purple-600 dark:text-purple-300">
+            Join flow
+          </p>
+          <h2 className="mt-3 font-display text-2xl font-bold text-[var(--color-ink)]">
+            Start with the Google form
+          </h2>
+          <p className="mt-4 text-sm leading-relaxed text-[var(--color-ink-muted)]">
+            This simple flow helps new learners join the AI VISTAAR community. Open the form, submit your details, then continue to WhatsApp for the next step.
+          </p>
+          <div className="mt-6 flex flex-wrap gap-3">
+            <Button onClick={startJoin}>Open Join Form</Button>
+            {started && (
+              <a
+                href={whatsappUrl}
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center justify-center rounded-xl border border-[var(--color-border)] bg-[var(--color-surface-elevated)] px-5 py-2.5 text-sm font-semibold text-[var(--color-ink)] transition-colors hover:border-purple-400/50"
+              >
+                Open WhatsApp Group
+              </a>
+            )}
+          </div>
+          {started && (
+            <p className="mt-3 text-sm text-[var(--color-ink-muted)]">
+              After submitting the form, open WhatsApp to continue joining the community.
+            </p>
+          )}
+        </Card>
+
+        <Card className="border border-purple-500/10 bg-gradient-to-br from-blue-500/5 via-purple-500/5 to-pink-500/5 p-8">
+          <p className="text-xs font-semibold uppercase tracking-[0.22em] text-purple-600 dark:text-purple-300">
+            Why this flow?
+          </p>
+          <p className="mt-4 text-sm leading-relaxed text-[var(--color-ink-muted)]">
+            Using the Google form keeps signup easy and familiar. Once you’ve started the form, the WhatsApp step helps bring every learner into the community chat.
+          </p>
+        </Card>
+      </section>
 
       <section>
         <SectionTitle

@@ -3,7 +3,6 @@ import { Link, NavLink } from 'react-router-dom'
 import { AnimatePresence, motion } from 'framer-motion'
 import { useTheme } from '../../context/ThemeContext.jsx'
 import { BrandLogo } from '../ui/BrandLogo.jsx'
-import { ButtonLink } from '../ui/Button.jsx'
 
 const nav = [
   { to: '/', label: 'Home' },
@@ -14,6 +13,9 @@ const nav = [
   { to: '/members', label: 'Members' },
   { to: '/contact', label: 'Contact' },
 ]
+
+const communityFormUrl =
+  'https://docs.google.com/forms/d/e/1FAIpQLSdRHczfuEWb0SoDf8TlHHMb2BtTaSaWLfO9qYnuJct4-ipkPA/viewform?usp=publish-editor'
 
 function linkClass({ isActive }) {
   return `rounded-lg px-3 py-2 text-sm font-medium transition-colors ${
@@ -62,9 +64,15 @@ export function Navbar() {
           >
             {theme === 'dark' ? '☀️' : '🌙'}
           </motion.button>
-          <span className="hidden sm:inline-flex">
-            <ButtonLink to="/community">Join community</ButtonLink>
-          </span>
+          <motion.a
+            href={communityFormUrl}
+            target="_blank"
+            rel="noreferrer"
+            whileTap={{ scale: 0.95 }}
+            className="hidden rounded-xl border border-transparent bg-gradient-to-r from-blue-600 via-purple-600 to-pink-500 px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-purple-500/25 transition-colors hover:shadow-purple-500/40 sm:inline-flex"
+          >
+            Join community
+          </motion.a>
           <motion.button
             type="button"
             whileTap={{ scale: 0.95 }}
@@ -101,9 +109,15 @@ export function Navbar() {
                 </NavLink>
               ))}
               <div className="mt-2">
-                <ButtonLink to="/community" className="w-full justify-center">
+                <motion.a
+                  href={communityFormUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  whileTap={{ scale: 0.95 }}
+                  className="inline-flex w-full items-center justify-center rounded-xl border border-transparent bg-gradient-to-r from-blue-600 via-purple-600 to-pink-500 px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-purple-500/25"
+                >
                   Join community
-                </ButtonLink>
+                </motion.a>
               </div>
             </div>
           </motion.div>
