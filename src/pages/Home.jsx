@@ -32,7 +32,7 @@ export function Home() {
           <motion.p
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-xs font-semibold uppercase tracking-[0.25em] text-purple-600 dark:text-purple-300"
+            className="text-xs font-semibold uppercase tracking-[0.25em] text-purple-600"
           >
             AI VISTAAR • Vistaar of Technology
           </motion.p>
@@ -61,9 +61,16 @@ export function Home() {
             transition={{ delay: 0.15 }}
             className="mt-8 flex flex-wrap items-center justify-center gap-3"
           >
-            <ButtonLink to="/community" variant="accent">
+            <motion.a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSdRHczfuEWb0SoDf8TlHHMb2BtTaSaWLfO9qYnuJct4-ipkPA/viewform?usp=sharing&ouid=115423476678648782359"
+              target="_blank"
+              rel="noopener noreferrer"
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
+              className="inline-flex items-center justify-center gap-2 rounded-xl px-5 py-2.5 text-sm font-semibold transition-colors bg-[#F4CE14] text-slate-950 shadow-lg shadow-[#F4CE14]/30 hover:shadow-[#F4CE14]/40"
+            >
               Join community
-            </ButtonLink>
+            </motion.a>
             <ButtonLink
               to="/about"
               variant="ghost"
@@ -81,7 +88,7 @@ export function Home() {
 
       <MotionSection className="grid gap-10 lg:grid-cols-3">
         <Card className="p-6">
-          <p className="text-xs font-semibold uppercase tracking-[0.22em] text-purple-600 dark:text-purple-300">
+          <p className="text-xs font-semibold uppercase tracking-[0.22em] text-purple-600">
             Learn
           </p>
           <h2 className="mt-3 text-xl font-bold text-[var(--color-ink)]">AI concepts made simple</h2>
@@ -90,7 +97,7 @@ export function Home() {
           </p>
         </Card>
         <Card className="p-6">
-          <p className="text-xs font-semibold uppercase tracking-[0.22em] text-purple-600 dark:text-purple-300">
+          <p className="text-xs font-semibold uppercase tracking-[0.22em] text-purple-600">
             Explore
           </p>
           <h2 className="mt-3 text-xl font-bold text-[var(--color-ink)]">Tools and practical paths</h2>
@@ -99,7 +106,7 @@ export function Home() {
           </p>
         </Card>
         <Card className="p-6">
-          <p className="text-xs font-semibold uppercase tracking-[0.22em] text-purple-600 dark:text-purple-300">
+          <p className="text-xs font-semibold uppercase tracking-[0.22em] text-purple-600">
             Connect
           </p>
           <h2 className="mt-3 text-xl font-bold text-[var(--color-ink)]">A friendly learning community</h2>
@@ -121,11 +128,16 @@ export function Home() {
         </div>
 
         <div className="grid gap-4 sm:grid-cols-2">
-          {[1, 2, 3, 4].map((i) => (
+          {[
+            { title: 'Interactive Learning', description: 'Hands-on AI projects and coding challenges designed for beginners.' },
+            { title: 'Expert Mentorship', description: 'Connect with experienced AI practitioners and get personalized guidance.' },
+            { title: 'Community Projects', description: 'Collaborate on real-world AI applications and build your portfolio.' },
+            { title: 'Latest AI Trends', description: 'Stay updated with cutting-edge AI developments and industry insights.' },
+          ].map((item, i) => (
             <Card key={i} delay={i * 0.05} className="p-5">
-              <p className="font-bold">Feature {i}</p>
+              <p className="font-bold text-[var(--color-ink)]">{item.title}</p>
               <p className="text-sm text-[var(--color-ink-muted)]">
-                Sample description text.
+                {item.description}
               </p>
             </Card>
           ))}
@@ -138,20 +150,23 @@ export function Home() {
         <div className="grid gap-6 md:grid-cols-3">
           {featured.map((post, i) => (
             <Card key={post.id} delay={i * 0.08} className="p-5">
-              <p className="font-bold">{post.title}</p>
+              <p className="text-xs font-semibold uppercase tracking-wide text-purple-600">{post.category}</p>
+              <p className="mt-2 font-bold text-[var(--color-ink)]">{post.title}</p>
+              <p className="mt-2 text-sm text-[var(--color-ink-muted)]">{post.excerpt}</p>
+              <p className="mt-3 text-xs text-[var(--color-ink-muted)]">By {post.author} • {post.date}</p>
             </Card>
           ))}
         </div>
       </section>
 
       {/* STATS */}
-      <section className="p-10 rounded-3xl bg-black/10">
+      <section className="p-10 rounded-3xl bg-gradient-to-br from-blue-50 to-purple-50 border border-purple-200">
         <SectionTitle eyebrow="Impact" title="Community Growth" />
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {communityStats.map((s) => (
             <div key={s.id} className="p-4 text-center">
-              <p className="text-2xl font-bold">{s.value}</p>
-              <p className="text-sm">{s.label}</p>
+              <p className="text-3xl font-bold text-[var(--color-ink)]">{s.value}</p>
+              <p className="text-sm text-[var(--color-ink-muted)] font-medium">{s.label}</p>
             </div>
           ))}
         </div>
@@ -164,18 +179,7 @@ export function Home() {
       </section>
 
       {/* CTA */}
-      <MotionSection className="p-10 text-center rounded-3xl bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500">
-        <h3 className="text-3xl font-bold text-white">
-          Ready to start learning?
-        </h3>
-        <div className="mt-6 flex justify-center gap-4">
-          <ButtonLink to="/community">Open Community</ButtonLink>
-          <ButtonLink to="/contact" variant="secondary">
-            Contact
-          </ButtonLink>
-        </div>
-      </MotionSection>
-
+    
     </div>
     
   )

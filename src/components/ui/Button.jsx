@@ -5,10 +5,12 @@ export const buttonVariants = {
   primary:
     'bg-gradient-to-r from-blue-600 via-purple-600 to-pink-500 text-white shadow-lg shadow-purple-500/25 hover:shadow-purple-500/40',
   secondary:
-    'bg-[var(--color-surface-elevated)] text-[var(--color-ink)] border border-[var(--color-border)] hover:border-purple-400/50',
+    'bg-[var(--color-surface-elevated)] text-[var(--color-ink)] border border-[var(--color-border)] hover:border-blue-400/50',
   ghost: 'text-[var(--color-ink)] hover:bg-[var(--color-border)]/60',
-   accent:
+  accent:
     'bg-[#F4CE14] text-slate-950 shadow-lg shadow-[#F4CE14]/30 hover:shadow-[#F4CE14]/40',
+  community:
+    'bg-gradient-to-r from-yellow-300 via-cyan-400 to-blue-500 text-slate-900 shadow-lg shadow-blue-400/25 hover:shadow-blue-400/40 font-bold',
 }
 
 export function Button({ children, variant = 'primary', className = '', type = 'button', ...props }) {

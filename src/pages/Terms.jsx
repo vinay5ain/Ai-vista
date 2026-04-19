@@ -1,7 +1,7 @@
 export function Terms() {
   return (
     <article className="mx-auto max-w-3xl">
-      <p className="text-xs font-semibold uppercase tracking-[0.25em] text-purple-600 dark:text-purple-300">
+      <p className="text-xs font-semibold uppercase tracking-[0.25em] text-purple-600">
         Legal
       </p>
       <h1 className="mt-3 font-display text-4xl font-extrabold text-[var(--color-ink)]">Terms & Conditions</h1>

@@ -10,7 +10,7 @@ export function SectionTitle({ eyebrow, title, subtitle, align = 'center' }) {
           initial={{ opacity: 0, y: 8 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mb-2 text-xs font-semibold uppercase tracking-[0.2em] text-purple-600 dark:text-purple-300"
+          className="mb-2 text-xs font-semibold uppercase tracking-[0.2em] text-purple-600"
         >
           {eyebrow}
         </motion.p>

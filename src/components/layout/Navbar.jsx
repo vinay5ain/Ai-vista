@@ -1,39 +1,32 @@
 import { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import { AnimatePresence, motion } from 'framer-motion'
-import { useTheme } from '../../context/ThemeContext.jsx'
 import { BrandLogo } from '../ui/BrandLogo.jsx'
 
 const nav = [
   { to: '/', label: 'Home' },
   { to: '/about', label: 'About' },
-  { to: '/blog', label: 'Blog' },
-  { to: '/community', label: 'Community' },
+  { to: '/team', label: 'Team' },
   { to: '/events', label: 'Events' },
-  { to: '/members', label: 'Members' },
   { to: '/contact', label: 'Contact' },
 ]
-
-const communityFormUrl =
-  'https://docs.google.com/forms/d/e/1FAIpQLSdRHczfuEWb0SoDf8TlHHMb2BtTaSaWLfO9qYnuJct4-ipkPA/viewform?usp=publish-editor'
 
 function linkClass({ isActive }) {
   return `rounded-lg px-3 py-2 text-sm font-medium transition-colors ${
     isActive
-      ? 'bg-gradient-to-r from-blue-600/15 via-purple-600/15 to-pink-500/15 text-purple-700 dark:text-purple-200'
+      ? 'bg-gradient-to-r from-yellow-300/20 to-blue-400/20 text-blue-600'
       : 'text-[var(--color-ink-muted)] hover:text-[var(--color-ink)]'
   }`
 }
 
 export function Navbar() {
-  const { theme, toggleTheme } = useTheme()
   const [open, setOpen] = useState(false)
 
   return (
     <header className="sticky top-0 z-40 border-b border-[var(--color-border)]/80 bg-[var(--color-surface)]/80 backdrop-blur-md">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 sm:px-6">
         <Link to="/" className="group flex items-center gap-2">
-          <motion.span layout className="rounded-xl bg-white p-1 shadow-sm ring-1 ring-black/5 dark:bg-slate-900 dark:ring-white/10">
+          <motion.span layout className="rounded-xl bg-white p-1 shadow-sm ring-1 ring-black/5">
             <BrandLogo className="h-9 w-9" />
           </motion.span>
           <div className="leading-tight">
@@ -55,23 +48,14 @@ export function Navbar() {
         </nav>
 
         <div className="flex items-center gap-2">
-          <motion.button
-            type="button"
-            whileTap={{ scale: 0.95 }}
-            onClick={toggleTheme}
-            className="rounded-xl border border-[var(--color-border)] bg-[var(--color-surface-elevated)] px-3 py-2 text-sm font-semibold text-[var(--color-ink)]"
-            aria-label="Toggle color theme"
-          >
-            {theme === 'dark' ? '☀️' : '🌙'}
-          </motion.button>
           <motion.a
-            href={communityFormUrl}
+            href="https://docs.google.com/forms/d/e/1FAIpQLSdRHczfuEWb0SoDf8TlHHMb2BtTaSaWLfO9qYnuJct4-ipkPA/viewform?usp=sharing&ouid=115423476678648782359"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
             whileTap={{ scale: 0.95 }}
-            className="hidden rounded-xl border border-transparent bg-gradient-to-r from-blue-600 via-purple-600 to-pink-500 px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-purple-500/25 transition-colors hover:shadow-purple-500/40 sm:inline-flex"
+            className="hidden rounded-xl border border-transparent bg-gradient-to-r from-yellow-300 via-cyan-400 to-blue-500 px-5 py-2.5 text-sm font-semibold text-slate-900 shadow-lg shadow-blue-400/25 transition-colors hover:shadow-blue-400/40 sm:inline-flex"
           >
-            Join community
+            Join Community
           </motion.a>
           <motion.button
             type="button"
@@ -110,13 +94,13 @@ export function Navbar() {
               ))}
               <div className="mt-2">
                 <motion.a
-                  href={communityFormUrl}
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSdRHczfuEWb0SoDf8TlHHMb2BtTaSaWLfO9qYnuJct4-ipkPA/viewform?usp=sharing&ouid=115423476678648782359"
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                   whileTap={{ scale: 0.95 }}
-                  className="inline-flex w-full items-center justify-center rounded-xl border border-transparent bg-gradient-to-r from-blue-600 via-purple-600 to-pink-500 px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-purple-500/25"
+                  className="inline-flex w-full items-center justify-center rounded-xl border border-transparent bg-gradient-to-r from-yellow-300 via-cyan-400 to-blue-500 px-5 py-3 text-sm font-semibold text-slate-900 shadow-lg shadow-blue-400/25"
                 >
-                  Join community
+                  Join Community
                 </motion.a>
               </div>
             </div>

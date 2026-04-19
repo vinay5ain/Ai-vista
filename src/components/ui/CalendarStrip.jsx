@@ -9,12 +9,12 @@ export function CalendarStrip() {
     <div className="rounded-2xl border border-[var(--color-border)] bg-[var(--color-surface-elevated)] p-5 shadow-[var(--shadow-soft)]">
       <div className="mb-4 flex items-center justify-between">
         <div>
-          <p className="text-xs font-semibold uppercase tracking-widest text-purple-600 dark:text-purple-300">
+          <p className="text-xs font-semibold uppercase tracking-widest text-purple-600">
             Calendar
           </p>
           <p className="font-display text-xl font-bold text-[var(--color-ink)]">April 2026</p>
         </div>
-        <span className="rounded-full bg-gradient-to-r from-blue-600/15 via-purple-600/15 to-pink-500/15 px-3 py-1 text-xs font-semibold text-purple-700 dark:text-purple-200">
+        <span className="rounded-full bg-gradient-to-r from-blue-600/15 via-purple-600/15 to-pink-500/15 px-3 py-1 text-xs font-semibold text-purple-700">
           Demo UI
         </span>
       </div>

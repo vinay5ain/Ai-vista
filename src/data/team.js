@@ -1,36 +1,52 @@
+import khushiImg from '../assets/khushi.jpeg';
+import khushiGuptaImg from '../assets/Khushi gupta.jpeg';
+import akalpayaImg from '../assets/Akalpaya.jpeg';
+import vinaySainImg from '../assets/Vinaysain.png';
+import shwetaImg from '../assets/Shweta.jpeg';
+import manasviImg from '../assets/Manasvi.jpeg';
 export const leadershipTeam = [
   {
     id: 'khushi',
     name: 'Khushi Singhal',
     role: 'Founder & Community Lead',
     bio: 'Built by a learner, for learners—Khushi stewards programs, partnerships, and the welcoming culture of AI VISTAAR.',
-    image:
-      'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&h=600&fit=crop',
+    image: khushiImg,
   },
   {
-    id: 'dev',
-    name: 'Dev Malhotra',
-    role: 'Programs & Workshops',
-    bio: 'Designs hands-on labs and cohort-style learning sprints for ages 12–30.',
-    image:
-      'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=600&h=600&fit=crop',
+    id: 'khushi-gupta',
+    name: 'Khushi Gupta',
+    role: 'Co-Founder & Technical Lead',
+    bio: 'Drives technical innovation and oversees project development within the AI VISTAAR ecosystem.',
+    image: khushiGuptaImg,
   },
   {
-    id: 'sara',
-    name: 'Sara Khan',
-    role: 'Community Experience',
-    bio: 'Keeps discussions kind, curious, and constructive across forums and events.',
-    image:
-      'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=600&h=600&fit=crop',
+    id: 'akalpay',
+    name: 'Akalpaya',
+    role: 'AI Research Lead',
+    bio: 'Specializes in AI research and contributes to educational content and workshops.',
+    image: akalpayaImg,
   },
   {
-    id: 'arjun',
-    name: 'Arjun Patel',
-    role: 'Events & Partnerships',
-    bio: 'Connects campuses, clubs, and nonprofits to co-host learning experiences.',
-    image:
-      'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=600&h=600&fit=crop',
+    id: 'vinay-sain',
+    name: 'Vinay Sain',
+    role: 'Design & UX Lead',
+    bio: 'Manages design and user experience, ensuring intuitive interfaces for learners.',
+    image: vinaySainImg,
   },
+  {
+    id: 'shweta',
+    name: 'Shweta',
+    role: 'Operations & Community Support',
+    bio: 'Fosters engagement and supports community growth through events and partnerships.',
+    image: shwetaImg,
+  },
+   {
+    id: 'khushi',
+    name: 'Khushi Singhal',
+    role: 'Founder & Community Lead',
+    bio: 'Built by a learner, for learners—Khushi stewards programs, partnerships, and the welcoming culture of AI VISTAAR.',
+    image: manasviImg,
+  }
 ]
 
 export const timeline = [

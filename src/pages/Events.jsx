@@ -8,14 +8,14 @@ export function Events() {
   return (
     <div className="space-y-16">
       <header>
-        <p className="text-xs font-semibold uppercase tracking-[0.25em] text-purple-600 dark:text-purple-300">
+        <p className="text-xs font-semibold uppercase tracking-[0.25em] text-purple-600">
           Events
         </p>
         <h1 className="mt-3 font-display text-4xl font-extrabold tracking-tight text-[var(--color-ink)] sm:text-5xl">
           Show up <span className="gradient-text">as you are</span>
         </h1>
         <p className="mt-4 max-w-2xl text-[var(--color-ink-muted)]">
-          RSVP buttons are decorative—use them as placeholders for future forms or ticketing.
+          Join our upcoming AI learning sessions, workshops, and community events designed to accelerate your AI journey.
         </p>
       </header>
 
@@ -25,7 +25,7 @@ export function Events() {
             align="left"
             eyebrow="Upcoming"
             title="Save the dates"
-            subtitle="Dummy schedule for layout—swap dates when your calendar is live."
+            subtitle="Exciting AI events and learning opportunities coming soon"
           />
           <div className="grid gap-6 md:grid-cols-2">
             {upcomingEvents.map((e, i) => (
@@ -37,7 +37,7 @@ export function Events() {
                   </span>
                 </div>
                 <div className="p-5">
-                  <p className="text-xs font-semibold uppercase tracking-wide text-purple-600 dark:text-purple-300">
+                  <p className="text-xs font-semibold uppercase tracking-wide text-purple-600">
                     {e.date} · {e.time}
                   </p>
                   <h3 className="mt-2 font-display text-lg font-bold text-[var(--color-ink)]">{e.title}</h3>
@@ -65,7 +65,7 @@ export function Events() {
       </section>
 
       <section>
-        <SectionTitle eyebrow="Archive" title="Past events gallery" subtitle="Moments from earlier seasons." />
+        <SectionTitle eyebrow="Archive" title="Past events gallery" subtitle="Memorable moments from our AI learning community" />
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {pastEvents.map((ev, i) => (
             <motion.figure

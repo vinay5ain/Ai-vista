@@ -44,7 +44,7 @@ export function Footer() {
                 <li key={l.to}>
                   <Link
                     to={l.to}
-                    className="text-[var(--color-ink-muted)] transition-colors hover:text-purple-600 dark:hover:text-purple-300"
+                    className="text-[var(--color-ink-muted)] transition-colors hover:text-purple-600"
                   >
                     {l.label}
                   </Link>
@@ -53,7 +53,7 @@ export function Footer() {
               <li>
                 <Link
                   to="/community"
-                  className="text-[var(--color-ink-muted)] transition-colors hover:text-purple-600 dark:hover:text-purple-300"
+                  className="text-[var(--color-ink-muted)] transition-colors hover:text-purple-600"
                 >
                   Community
                 </Link>
@@ -61,7 +61,7 @@ export function Footer() {
               <li>
                 <Link
                   to="/contact"
-                  className="text-[var(--color-ink-muted)] transition-colors hover:text-purple-600 dark:hover:text-purple-300"
+                  className="text-[var(--color-ink-muted)] transition-colors hover:text-purple-600"
                 >
                   Contact
                 </Link>
@@ -76,7 +76,7 @@ export function Footer() {
                 <li key={l.to}>
                   <Link
                     to={l.to}
-                    className="text-[var(--color-ink-muted)] transition-colors hover:text-purple-600 dark:hover:text-purple-300"
+                    className="text-[var(--color-ink-muted)] transition-colors hover:text-purple-600"
                   >
                     {l.label}
                   </Link>
@@ -95,7 +95,7 @@ export function Footer() {
                     target="_blank"
                     rel="noreferrer"
                     whileHover={{ x: 2 }}
-                    className="flex flex-col gap-0.5 text-[var(--color-ink-muted)] transition-colors hover:text-purple-600 dark:hover:text-purple-300"
+                    className="flex flex-col gap-0.5 text-[var(--color-ink-muted)] transition-colors hover:text-purple-600"
                   >
                     <span className="font-semibold text-[var(--color-ink)]">{s.label}</span>
                     <span className="text-xs">{s.handle}</span>

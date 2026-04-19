@@ -22,7 +22,7 @@ export function NotFound() {
           Visit community
         </ButtonLink>
       </div>
-      <Link to="/faq" className="mt-6 text-sm font-semibold text-purple-600 dark:text-purple-300">
+      <Link to="/faq" className="mt-6 text-sm font-semibold text-purple-600">
         Read the FAQ
       </Link>
     </div>

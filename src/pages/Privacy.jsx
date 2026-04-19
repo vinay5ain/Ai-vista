@@ -1,7 +1,7 @@
 export function Privacy() {
   return (
     <article className="mx-auto max-w-3xl">
-      <p className="text-xs font-semibold uppercase tracking-[0.25em] text-purple-600 dark:text-purple-300">
+      <p className="text-xs font-semibold uppercase tracking-[0.25em] text-purple-600">
         Legal
       </p>
       <h1 className="mt-3 font-display text-4xl font-extrabold text-[var(--color-ink)]">Privacy Policy</h1>
@@ -24,7 +24,7 @@ export function Privacy() {
         <h2 className="font-display text-xl font-bold text-[var(--color-ink)]">Contact</h2>
         <p>
           For privacy questions related to the real AI VISTAAR organization, email{' '}
-          <a className="font-semibold text-purple-600 dark:text-purple-300" href="mailto:aivistaarorg@gmail.com">
+          <a className="font-semibold text-purple-600" href="mailto:aivistaarorg@gmail.com">
             aivistaarorg@gmail.com
           </a>
           .

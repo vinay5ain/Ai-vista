@@ -1,13 +1,13 @@
 import { motion } from 'framer-motion'
 import { Card } from '../components/ui/Card.jsx'
 import { SectionTitle } from '../components/ui/SectionTitle.jsx'
-import { leadershipTeam, timeline } from '../data/team.js'
+import { timeline } from '../data/team.js'
 
 export function About() {
   return (
     <div className="space-y-20">
       <header className="max-w-3xl">
-        <p className="text-xs font-semibold uppercase tracking-[0.25em] text-purple-600 dark:text-purple-300">
+        <p className="text-xs font-semibold uppercase tracking-[0.25em] text-purple-600">
           About AI VISTAAR
         </p>
         <h1 className="mt-3 font-display text-4xl font-extrabold tracking-tight text-[var(--color-ink)] sm:text-5xl">
@@ -20,7 +20,7 @@ export function About() {
 
       <section className="grid gap-6 lg:grid-cols-2">
         <Card className="border-purple-500/20 bg-gradient-to-br from-blue-600/5 via-purple-600/5 to-pink-500/5">
-          <p className="text-xs font-semibold uppercase tracking-widest text-purple-600 dark:text-purple-300">
+          <p className="text-xs font-semibold uppercase tracking-widest text-purple-600">
             About section
           </p>
           <h2 className="mt-2 font-display text-2xl font-bold text-[var(--color-ink)]">Learner-first AI education</h2>
@@ -29,7 +29,7 @@ export function About() {
           </p>
         </Card>
         <Card className="border-pink-500/20 bg-gradient-to-br from-pink-500/5 via-purple-600/5 to-blue-600/5">
-          <p className="text-xs font-semibold uppercase tracking-widest text-pink-600 dark:text-pink-300">
+          <p className="text-xs font-semibold uppercase tracking-widest text-pink-600">
             Website purpose
           </p>
           <h2 className="mt-2 font-display text-2xl font-bold text-[var(--color-ink)]">Share knowledge, simplify concepts</h2>
@@ -47,7 +47,7 @@ export function About() {
           { title: 'AI theme', text: 'A modern, calm palette and polished layout support learning without distraction.' },
         ].map((item) => (
           <Card key={item.title} className="p-6">
-            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-purple-600 dark:text-purple-300">{item.title}</p>
+            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-purple-600">{item.title}</p>
             <p className="mt-3 text-sm text-[var(--color-ink-muted)]">{item.text}</p>
           </Card>
         ))}
@@ -57,41 +57,17 @@ export function About() {
         <SectionTitle
           align="left"
           eyebrow="Story"
-          title="From study calls to a constellation"
-          subtitle="A short narrative arc for the page—replace with your real milestones anytime."
+          title="From curiosity to innovation"
+          subtitle="How AI VISTAAR empowers the next generation of AI learners"
         />
         <div className="mt-8 rounded-3xl border border-[var(--color-border)] bg-[var(--color-surface-elevated)] p-8 shadow-[var(--shadow-soft)]">
           <p className="text-sm leading-relaxed text-[var(--color-ink-muted)]">
-            What started as late-night explanations and shared notebooks became a rhythm: weekly themes,
-            mentor office hours, and showcases where beginners and builders share the same stage. Today, AI
-            VISTAAR is a nonprofit-minded community that keeps the learner’s voice in the center.
+            What began as a small group of passionate learners sharing knowledge has evolved into a vibrant community
+            dedicated to democratizing AI education. We believe that artificial intelligence should be accessible to
+            everyone, regardless of their background or experience level. Through collaborative learning, hands-on
+            projects, and expert mentorship, AI VISTAAR continues to bridge the gap between complex AI concepts and
+            practical understanding.
           </p>
-        </div>
-      </section>
-
-      <section>
-        <SectionTitle eyebrow="Team" title="People behind the scenes" subtitle="Sample portraits and roles." />
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {leadershipTeam.map((person, i) => (
-            <Card key={person.id} delay={i * 0.06} className="overflow-hidden p-0">
-              <div className="h-48 overflow-hidden">
-                <motion.img
-                  whileHover={{ scale: 1.04 }}
-                  transition={{ type: 'spring', stiffness: 260, damping: 22 }}
-                  src={person.image}
-                  alt={person.name}
-                  className="h-full w-full object-cover"
-                />
-              </div>
-              <div className="p-5">
-                <p className="font-display text-lg font-bold text-[var(--color-ink)]">{person.name}</p>
-                <p className="text-xs font-semibold uppercase tracking-wide text-purple-600 dark:text-purple-300">
-                  {person.role}
-                </p>
-                <p className="mt-3 text-sm text-[var(--color-ink-muted)]">{person.bio}</p>
-              </div>
-            </Card>
-          ))}
         </div>
       </section>
 
@@ -111,7 +87,7 @@ export function About() {
                 {i + 1}
               </span>
               <div className="flex-1 rounded-2xl border border-[var(--color-border)] bg-[var(--color-surface-elevated)] p-5 shadow-[var(--shadow-soft)]">
-                <p className="text-xs font-semibold uppercase tracking-widest text-purple-600 dark:text-purple-300">
+                <p className="text-xs font-semibold uppercase tracking-widest text-purple-600">
                   {item.year}
                 </p>
                 <p className="mt-1 font-display text-lg font-bold text-[var(--color-ink)]">{item.title}</p>
