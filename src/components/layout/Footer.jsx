@@ -5,9 +5,9 @@ import { BrandLogo } from '../ui/BrandLogo.jsx'
 
 const explore = [
   { to: '/about', label: 'About' },
-  { to: '/blog', label: 'Blog' },
+  { to: '/team', label: 'Team' },
   { to: '/events', label: 'Events' },
-  { to: '/members', label: 'Members' },
+  { to: '/contact', label: 'Contact' },
 ]
 
 const legal = [
