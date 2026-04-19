@@ -3,7 +3,7 @@ import khushiGuptaImg from '../assets/Khushi gupta.jpeg';
 import akalpayaImg from '../assets/Akalpaya.jpeg';
 import vinaySainImg from '../assets/Vinaysain.png';
 import shwetaImg from '../assets/Shweta.jpeg';
-import manasviImg from '../assets/Manasvi.jpeg';
+import manasviImg from '../assets/manasvi.jpeg';
 export const leadershipTeam = [
   {
     id: 'khushi',
@@ -40,13 +40,13 @@ export const leadershipTeam = [
     bio: 'Fosters engagement and supports community growth through events and partnerships.',
     image: shwetaImg,
   },
-   {
-    id: 'khushi',
-    name: 'Khushi Singhal',
-    role: 'Founder & Community Lead',
-    bio: 'Built by a learner, for learners—Khushi stewards programs, partnerships, and the welcoming culture of AI VISTAAR.',
+  {
+    id: 'manasvi',
+    name: 'Manasvi',
+    role: 'Community Manager',
+    bio: 'Manages community engagement and fosters meaningful connections among learners.',
     image: manasviImg,
-  }
+  },
 ]
 
 export const timeline = [

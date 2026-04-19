@@ -8,7 +8,6 @@ import { Contact } from './pages/Contact.jsx'
 import { FAQ } from './pages/FAQ.jsx'
 import { Privacy } from './pages/Privacy.jsx'
 import { Terms } from './pages/Terms.jsx'
-import { JoinCommunity } from './pages/JoinCommunity.jsx'
 import { NotFound } from './pages/NotFound.jsx'
 
 export default function App() {
@@ -22,7 +21,6 @@ export default function App() {
           <Route path="/events" element={<Events />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/faq" element={<FAQ />} />
-          <Route path="/joincommunity" element={<JoinCommunity />} />
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/terms" element={<Terms />} />
           <Route path="*" element={<NotFound />} />

@@ -18,8 +18,8 @@ export function NotFound() {
       </p>
       <div className="mt-8 flex flex-wrap justify-center gap-3">
         <ButtonLink to="/">Go home</ButtonLink>
-        <ButtonLink to="/joincommunity" variant="secondary">
-          Join community
+        <ButtonLink to="/events" variant="secondary">
+          View events
         </ButtonLink>
       </div>
       <Link to="/faq" className="mt-6 text-sm font-semibold text-purple-600">
