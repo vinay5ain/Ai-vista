@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import groupPic from '../assets/group_pic.png'
+
 import { Card } from '../components/ui/Card.jsx'
 import { SectionTitle } from '../components/ui/SectionTitle.jsx'
 import { leadershipTeam } from '../data/team.js'
@@ -31,15 +31,7 @@ export function Team() {
             From community leadership to design and content, every team member helps make AI VISTAAR a welcoming place for beginners and curious learners.
           </p>
         </div>
-        <div className="overflow-hidden rounded-[2rem] border border-[var(--color-border)] bg-[var(--color-surface-elevated)] shadow-[var(--shadow-soft)]">
-          <motion.img
-            src={groupPic}
-            alt="AI VISTAAR team group"
-            className="h-full w-full object-cover"
-            whileHover={{ scale: 1.02 }}
-            transition={{ duration: 0.6 }}
-          />
-        </div>
+       
       </section>
 
       <section>
