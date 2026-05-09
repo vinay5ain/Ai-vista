@@ -4,7 +4,6 @@ import { socialLinks } from '../../data/social.js'
 import { BrandLogo } from '../ui/BrandLogo.jsx'
 
 const explore = [
-  { to: '/about', label: 'About' },
   { to: '/team', label: 'Team' },
   { to: '/events', label: 'Events' },
   { to: '/contact', label: 'Contact' },

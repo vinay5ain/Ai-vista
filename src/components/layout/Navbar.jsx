@@ -5,7 +5,6 @@ import { BrandLogo } from '../ui/BrandLogo.jsx'
 
 const nav = [
   { to: '/', label: 'Home' },
-  { to: '/about', label: 'About' },
   { to: '/team', label: 'Team' },
   { to: '/events', label: 'Events' },
   { to: '/contact', label: 'Contact' },

@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion'
-import { ButtonLink } from '../components/ui/Button.jsx'
 import { Card } from '../components/ui/Card.jsx'
 import { SectionTitle } from '../components/ui/SectionTitle.jsx'
 import { MotionSection } from '../components/ui/MotionSection.jsx'
@@ -71,13 +70,6 @@ export function Home() {
             >
               Join community
             </motion.a>
-            <ButtonLink
-              to="/about"
-              variant="ghost"
-              className="border border-white/20 bg-white/10 text-white hover:bg-white/15"
-            >
-              Learn more
-            </ButtonLink>
           </motion.div>
 
           <p className="mt-6 text-xs text-[var(--color-ink-muted)]">
