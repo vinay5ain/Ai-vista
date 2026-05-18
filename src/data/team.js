@@ -4,6 +4,8 @@ import akalpayaImg from '../assets/Akalpaya.jpeg';
 import vinaySainImg from '../assets/Vinaysain.png';
 import shwetaImg from '../assets/Shweta.jpeg';
 import manasviImg from '../assets/manasvi.jpeg';
+import dikshaImg from '../assets/disha.jpeg';
+import khushvinderImg from '../assets/khushvinder.jpeg';
 export const leadershipTeam = [
   {
     id: 'khushi',
@@ -47,7 +49,22 @@ export const leadershipTeam = [
     bio: 'Manages community engagement and fosters meaningful connections among learners.',
     image: manasviImg,
   },
+   {
+  id: 'diksha-singh',
+  name: 'Diksha Singh',
+  role: 'Community Management',
+  bio: 'Connecting learners, creators, and innovators—Diksha helps build the collaborative spirit and inclusive community that powers AI VISTAAR.',
+  image: dikshaImg,
+},
+{
+  id: 'khushvinder-kaur',
+  name: 'Khushvinder Kaur',
+  role: 'Community Engagement Lead',
+  bio: 'Passionate about building meaningful connections, Khushvinder fosters collaboration, supports learners, and helps grow the vibrant community behind AI VISTAAR.',
+  image: khushvinderImg,
+},
 ]
+
 
 export const timeline = [
   {
