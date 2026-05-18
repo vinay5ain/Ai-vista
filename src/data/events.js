@@ -34,30 +34,26 @@ export const upcomingEvents = [
 export const pastEvents = [
   {
     id: 'p1',
-    title: 'Kickoff: Learning in public',
-    date: 'Jan 2026',
-    image:
-      'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=900&h=560&fit=crop',
+    title: 'AI Awareness Workshops - Nagar Nigam Balika Inter College, Makanpur',
+    date: 'Jul 2025',
+    image: '/src/assets/July2025.jpeg',
+    organizedBy: 'Founder',
+    description: 'Led school AI workshops on AI basics, ethics, and future opportunities.'
   },
   {
     id: 'p2',
-    title: 'Intro to embeddings & search',
-    date: 'Dec 2025',
-    image:
-      'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=900&h=560&fit=crop',
+    title: 'AI Awareness Workshops - Nagar Nigam Balika Inter College, Makanpur',
+    date: 'Nov 2025',
+    image: '/src/assets/November2025.jpeg',
+    organizedBy: 'Founder',
+    description: 'Conducted AI awareness sessions for students, promoting AI learning and innovation.'
   },
   {
     id: 'p3',
-    title: 'Study jam: Python for ML',
-    date: 'Nov 2025',
-    image:
-      'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=900&h=560&fit=crop',
-  },
-  {
-    id: 'p4',
-    title: 'Show & tell: student projects',
-    date: 'Oct 2025',
-    image:
-      'https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=900&h=560&fit=crop',
+    title: 'AI Awareness Workshops - Nagar Nigam Balika Inter College, Makanpur',
+    date: 'Jan 2025',
+    image: '/src/assets/January2025.jpeg',
+    organizedBy: 'Founder',
+    description: 'Organized interactive workshops on AI fundamentals and emerging technologies in schools.',
   },
 ]
