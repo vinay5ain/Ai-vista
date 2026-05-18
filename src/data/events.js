@@ -1,3 +1,8 @@
+import July2025 from '../assets/July2025.jpeg';
+import November2025 from '../assets/November2025.jpeg';
+import January2025 from '../assets/January2025.jpeg';
+
+
 export const upcomingEvents = [
   {
     id: 'e1',
@@ -36,7 +41,7 @@ export const pastEvents = [
     id: 'p1',
     title: 'AI Awareness Workshops - Nagar Nigam Balika Inter College, Makanpur',
     date: 'Jul 2025',
-    image: '/src/assets/July2025.jpeg',
+    image: July2025,
     organizedBy: 'Founder',
     description: 'Led school AI workshops on AI basics, ethics, and future opportunities.'
   },
@@ -44,7 +49,7 @@ export const pastEvents = [
     id: 'p2',
     title: 'AI Awareness Workshops - Nagar Nigam Balika Inter College, Makanpur',
     date: 'Nov 2025',
-    image: '/src/assets/November2025.jpeg',
+    image: November2025,
     organizedBy: 'Founder',
     description: 'Conducted AI awareness sessions for students, promoting AI learning and innovation.'
   },
@@ -52,8 +57,8 @@ export const pastEvents = [
     id: 'p3',
     title: 'AI Awareness Workshops - Nagar Nigam Balika Inter College, Makanpur',
     date: 'Jan 2025',
-    image: '/src/assets/January2025.jpeg',
+    image: January2025,
     organizedBy: 'Founder',
     description: 'Organized interactive workshops on AI fundamentals and emerging technologies in schools.',
   },
-]
+];
