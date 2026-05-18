@@ -17,7 +17,7 @@ export const leadershipTeam = [
   {
     id: 'khushi-gupta',
     name: 'Khushi Gupta',
-    role: 'Co-Founder & Technical Lead',
+    role: 'Social media head',
     bio: 'Drives technical innovation and oversees project development within the AI VISTAAR ecosystem.',
     image: khushiGuptaImg,
   },
