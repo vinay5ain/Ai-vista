@@ -106,12 +106,6 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 flex flex-col items-start justify-between gap-4 border-t border-[var(--color-border)] pt-8 text-xs text-[var(--color-ink-muted)] sm:flex-row sm:items-center">
-          <p>© {new Date().getFullYear()} AI VISTAAR. Community UI demo—no backend.</p>
-          <p className="rounded-full bg-[var(--color-surface)] px-3 py-1 ring-1 ring-[var(--color-border)]">
-            Built with React · Tailwind · Motion
-          </p>
-        </div>
       </div>
     </footer>
   )
