@@ -43,7 +43,7 @@ export function Home() {
             transition={{ delay: 0.05 }}
              className="mt-4 font-display text-4xl font-extrabold tracking-tight text-white sm:text-6xl"
           >
-            AI VISTAR – <span className="gradient-text">Vibgyog of Technology</span>
+            AI VISTAR – <span className="gradient-text">Vibgyor of Technology</span>
           </motion.h1>
 
           <motion.p
