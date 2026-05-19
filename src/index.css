@@ -96,7 +96,7 @@ a:hover {
 }
 
 .gradient-text {
-  background: linear-gradient(120deg, #2563eb, #eab308, #3b82f6);
+  background: linear-gradient(120deg, #ec4899, #06b6d4, #f59e0b);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -107,7 +107,7 @@ a:hover {
   position: relative;
   background: linear-gradient(var(--color-surface-elevated), var(--color-surface-elevated))
       padding-box,
-    linear-gradient(120deg, #2563eb, #7c3aed, #ec4899) border-box;
+    linear-gradient(120deg, #ec4899, #06b6d4, #f59e0b) border-box;
   border: 1px solid transparent;
 }
 
@@ -180,3 +180,65 @@ a:hover {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
+/* GIF uploader + glassmorphism preview */
+.gif-uploader {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.gif-uploader__drop {
+  display: block;
+  cursor: pointer;
+  border-radius: 0.75rem;
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+
+.gif-uploader__drop:hover {
+  transform: translateY(-3px);
+}
+
+.gif-uploader__preview {
+  position: relative;
+  width: 100%;
+  max-width: 520px;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
+}
+
+.gif-uploader__img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.gif-uploader__glass {
+  position: absolute;
+  inset: 12px;
+  border-radius: 0.625rem;
+  background: linear-gradient(135deg, rgba(255,255,255,0.12), rgba(255,255,255,0.04));
+  backdrop-filter: blur(8px) saturate(120%);
+  -webkit-backdrop-filter: blur(8px) saturate(120%);
+  border: 1px solid rgba(255,255,255,0.14);
+  pointer-events: none;
+}
+
+.gif-uploader__controls {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  display: flex;
+  gap: 8px;
+}
+
+.gif-uploader .join-hero-button {
+  background: rgba(255,255,255,0.08);
+  color: var(--color-ink);
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.12);
+}
+

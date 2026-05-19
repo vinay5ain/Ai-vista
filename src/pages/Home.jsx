@@ -24,11 +24,14 @@ export function Home() {
         }}
         className="relative overflow-hidden rounded-3xl border border-[var(--color-border)] bg-[var(--color-surface-elevated)] px-6 py-16 shadow-[var(--shadow-soft)] sm:px-12 sm:py-20"
       >
-        <div className="absolute inset-0 bg-slate-950/10" />
-        <div className="pointer-events-none absolute -left-32 top-0 h-72 w-72 rounded-full bg-blue-500/20 blur-3xl" />
-        <div className="pointer-events-none absolute -right-24 bottom-0 h-80 w-80 rounded-full bg-pink-500/20 blur-3xl" />
+           <div className="absolute inset-0 z-0" aria-hidden>
+             <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-transparent" />
+             <div className="absolute inset-0 bg-black/20 backdrop-blur-sm -webkit-backdrop-blur-sm mix-blend-multiply" />
+           </div>
+           <div className="pointer-events-none absolute -left-32 top-0 h-72 w-72 rounded-full bg-amber-500/20 blur-3xl" />
+           <div className="pointer-events-none absolute -right-24 bottom-0 h-80 w-80 rounded-full bg-teal-500/20 blur-3xl" />
 
-        <div className="relative mx-auto max-w-3xl text-center">
+        <div className="relative mx-auto max-w-3xl text-center z-10">
           <motion.p
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
@@ -41,7 +44,8 @@ export function Home() {
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.05 }}
-             className="mt-4 font-display text-4xl font-extrabold tracking-tight text-white sm:text-6xl"
+              className="mt-4 font-display text-4xl font-extrabold tracking-tight text-white sm:text-6xl"
+              style={{ textShadow: '0 6px 30px rgba(0,0,0,0.6)' }}
           >
             AI VISTAAR – <span className="gradient-text">Vibgyor of Technology</span>
           </motion.h1>
@@ -79,10 +83,6 @@ export function Home() {
               Learn more
             </ButtonLink>
           </motion.div>
-
-          <p className="mt-6 text-xs text-[var(--color-ink-muted)]">
-            Beginner-friendly, mobile-first, and fast-loading—designed to make AI easy to explore.
-          </p>
         </div>
       </section>
 
@@ -158,27 +158,6 @@ export function Home() {
           ))}
         </div>
       </section>
-
-      {/* STATS */}
-      <section className="p-10 rounded-3xl bg-gradient-to-br from-blue-50 to-purple-50 border border-purple-200">
-        <SectionTitle eyebrow="Impact" title="Community Growth" />
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          {communityStats.map((s) => (
-            <div key={s.id} className="p-4 text-center">
-              <p className="text-3xl font-bold text-[var(--color-ink)]">{s.value}</p>
-              <p className="text-sm text-[var(--color-ink-muted)] font-medium">{s.label}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* TESTIMONIALS */}
-      <section>
-        <SectionTitle eyebrow="Voices" title="What learners say" />
-        <TestimonialSlider />
-      </section>
-
-      {/* CTA */}
     
     </div>
     
