@@ -1,5 +1,4 @@
 import khushiImg from '../assets/khushi.jpeg';
-import khushiGuptaImg from '../assets/Khushi gupta.jpeg';
 import akalpayaImg from '../assets/Akalpaya.jpeg';
 import vinaySainImg from '../assets/Vinaysain.png';
 import shwetaImg from '../assets/Shweta.jpeg';
@@ -13,13 +12,6 @@ export const leadershipTeam = [
     role: 'Founder & Community Lead',
     bio: 'Built by a learner, for learners—Khushi stewards programs, partnerships, and the welcoming culture of AI VISTAAR.',
     image: khushiImg,
-  },
-  {
-    id: 'khushi-gupta',
-    name: 'Khushi Gupta',
-    role: 'Social media head',
-    bio: 'Drives technical innovation and oversees project development within the AI VISTAAR ecosystem.',
-    image: khushiGuptaImg,
   },
   {
     id: 'akalpay',
