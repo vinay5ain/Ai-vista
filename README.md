@@ -136,7 +136,3 @@ This repository is a strong example of front-end skills you can discuss in inter
 - Live site: https://ai-vista-self.vercel.app
 
 ---
-If you'd like, I can:
-- commit this README.md to the repository,
-- add a short CONTRIBUTING.md and a LICENSE file,
-- or generate a small "how to contribute" section and runbook for future backend integration.
